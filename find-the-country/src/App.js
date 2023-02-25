@@ -1,15 +1,10 @@
+import NavBar from './components/NavBar';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-        <p>
-          This is a test
-        </p>
-        
-      </header>
+      <NavBar />
     </div>
   );
 }
