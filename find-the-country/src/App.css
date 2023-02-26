@@ -11,7 +11,7 @@
     height: 100%;
 }
 
-.app.darkMode{
+.app.dark-mode {
     background-color: var(--dark-mode-element);
     color: white;
 }
@@ -29,7 +29,7 @@
     font-weight: 600;
 }
 
-.header{
+.header {
     padding: 15px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.2);
 }
@@ -42,12 +42,12 @@
     margin: 0 auto;
 }
 
-.header.darkMode{
+.header.dark-mode {
     background-color: var(--dark-mode-element);
     color: white;
 }
 
-.switch-mode{
+.switch-mode {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,10 +62,9 @@
     justify-content: space-between;
 }
 
-.search-input{
+.search-input {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
     width: 300px;
     padding: 5px;
@@ -73,27 +72,27 @@
     gap: 5px;
 }
 
-.search-input input{
+.search-input input {
     border: 0;
     background-color: transparent;
-    font-size: 18px;
+    font-size: 14px;
     outline: none;
 }
 
-.search-input.darkMode{
+.search-input.dark-mode {
     background-color: var(--dark-mode-element);
     color: white;
 }
 
-.search-input.darkMode input{
+.search-input.dark-mode input {
     color: white;
 }
 
-.search-input.darkMode input::placeholder{
+.search-input.dark-mode input::placeholder {
     color: white;
 }
 
-.countries{
+.countries {
     max-width: 1440px;
     padding: 15px;
     display: flex;
@@ -103,27 +102,27 @@
     flex-wrap: wrap;
 }
 
-.country{
+.country {
     background-color: white;
     width: 305px;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    height: 370px;
+    height: 300px;
     cursor: pointer;
     transition: all 0.3s ease-in;
 }
 
-.country:hover{
+.country:hover {
     transform: scale(1.015);
 }
 
-.load{
+.load {
     width: 100vw;
     height: 100vw;
     background-color: var(--dark-mode-element);
 }
 
-.loading{
+.loading {
     font-size: 75px;
     font-weight: 600;
     margin: auto;
@@ -134,46 +133,49 @@
     transform: translate(50%, -50%);
 }
 
-.country.darkMode{
+.country.dark-mode {
     background-color: var(--dark-mode-element);
     color: white;
 }
 
-.country .flag-container{
+.country .flag-container {
     height: 170px;
     width: 100%;
 }
 
-.country .flag-container img{
+.country .flag-container img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.country .name{
+.country .name {
     margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
-.country .values{
-    color: gray;
+.country .values {
+    color: #333333;
 }
 
-.country .values.darkMode{
+.country .values.dark-mode {
     color: lightgray;
 }
 
-.country .details p{
+.country .details p {
     margin-bottom: 5px;
+    margin-left: 10px;
 }
 
-.country-details{
+.country-details {
     margin: 15px auto 0;
     padding: 15px;
     max-width: 1400px;
     min-height: 100vh;
 }
 
-.back{
+.back {
     background-color: white;
     border: 0;
     outline: 0;
@@ -189,7 +191,7 @@
     cursor: pointer;
 }
 
-.back.darkMode{
+.back.dark-mode {
     background-color: var(--dark-mode-element);
     color: white;
 }
@@ -217,7 +219,7 @@
     flex: 0.5;
 }
   
-.info.darkMode {
+.info.dark-mode {
     background-color: var(--dark-mode-element);
     color: white;
 }
@@ -234,10 +236,10 @@
 }
   
 .info .values {
-    color: gray;
+    color: #333333;
 }
   
-.info .values.darkMode {
+.info .values.dark-mode {
     background-color: var(--dark-mode-element);
     color: white;
 }
@@ -251,7 +253,7 @@
     cursor: pointer;
 }
   
-.border-country.darkMode {
+.border-country.dark-mode {
     background-color: var(--dark-mode-element);
     color: white;
 }
@@ -272,7 +274,7 @@
 }
     
 @media (max-width: 720px) {
-    .inputs{
+    .inputs {
         flex-direction: column;
         align-items: stretch;
         margin-bottom: 15px;
