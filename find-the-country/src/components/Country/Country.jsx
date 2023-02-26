@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 
 const Country = ({
     darkMode, 
@@ -15,24 +15,28 @@ const Country = ({
     };
 
     return(
-        <Box 
+        <Card 
             onClick={handleShowDetails}
-            className={`country ${darkMode ? "darkMode" : ""}`}
+            className={`country ${darkMode ? "dark-mode" : ""}`}
         >
             <Box className='flag-container'>
-                <img src={flag} alt=''/>
+                <CardMedia
+                    component='img'
+                    image={flag}
+                    alt=''
+                />
             </Box>
 
-            <Box className='details'>
-                <Typography variant='h3' className='name'>{name}</Typography>
+            <CardContent className='details'>
+                <Typography variant='h5' className='name'>{name}</Typography>
                 <p>
                     Capital: {" "}
-                    <span className={`values ${darkMode ? "darkMode" : ""}`}>
+                    <span className={`values ${darkMode ? "dark-mode" : ""}`}>
                         {capital}
                     </span>
                 </p>
-            </Box>
-        </Box>
+            </CardContent>
+        </Card>
     );
 };
 
