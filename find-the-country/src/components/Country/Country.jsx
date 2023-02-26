@@ -24,7 +24,7 @@ const Country = ({
                 />
             </Box>
             <CardContent className='details'>
-                <Typography variant='h5' className='name'>{name}</Typography>
+                <Typography variant='h8' className='name'><b>{name}</b></Typography>
                 <p>
                     Capital: {" "}
                     <span className={`values ${darkMode ? "dark-mode" : ""}`}>
@@ -32,7 +32,7 @@ const Country = ({
                     </span>
                 </p>
             </CardContent>
-            <Box sx={{display:'grid'}}>
+            <Box sx={{display:'flex'}}>
                 <Button 
                     onClick={handleShowDetails}
                     className={`card-options ${darkMode ? "dark-mode" : ""}`}  
@@ -45,7 +45,7 @@ const Country = ({
                     className={`card-options ${darkMode ? "dark-mode" : ""}`} 
                     sx={{textTransform: 'none'}}
                 >
-                    <Typography>Add to Favorites List</Typography>
+                    <Typography>Favorite</Typography>
                 </Button>
             </Box>
         </Card>

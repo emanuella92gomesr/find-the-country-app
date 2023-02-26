@@ -50,6 +50,16 @@
     user-select: none;
 }
 
+.favorite {
+    margin-left: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
 .inputs {
     display: flex;
     align-items: center;
@@ -101,7 +111,7 @@
     width: 305px;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    height: 350px;
+    height: 335px;
     cursor: pointer;
     transition: all 0.3s ease-in;
 }

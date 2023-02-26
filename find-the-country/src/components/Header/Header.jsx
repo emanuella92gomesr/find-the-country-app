@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { Box, Typography } from '@mui/material';
-import { DarkMode, LightMode } from '@mui/icons-material';
+import { DarkMode, Favorite, LightMode } from '@mui/icons-material';
 
 const Header = ({ onClick, darkMode }) => {
     const [darkModeText, setDarkModeText] = useState(false);
@@ -10,7 +10,11 @@ const Header = ({ onClick, darkMode }) => {
     return(
         <Box className={`header ${darkMode ? "darkMode" : ""}`}>
             <Box className='header-container'>
-                <Typography  variant='h4' className='logo'>Find the Country</Typography>
+                <Typography variant='h4' className='logo'>Find the Country</Typography>
+                <Box className='favorite' onClick={null}>
+                    <Favorite />
+                    <Typography variant='h7' className='logo'>Favorite Countries</Typography>
+                </Box>
                 <Box className='switch-mode' onClick={onClick}>
                     {darkModeText ? (
                         <DarkMode onClick={switchText} />
