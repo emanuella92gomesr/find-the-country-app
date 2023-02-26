@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/find-the-country-app/static/css/main.cc19b86b.css",
+    "main.js": "/find-the-country-app/static/js/main.d1b2285f.js",
+    "index.html": "/find-the-country-app/index.html",
+    "main.cc19b86b.css.map": "/find-the-country-app/static/css/main.cc19b86b.css.map",
+    "main.d1b2285f.js.map": "/find-the-country-app/static/js/main.d1b2285f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc19b86b.css",
+    "static/js/main.d1b2285f.js"
+  ]
+}
