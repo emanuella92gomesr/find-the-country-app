@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { AppBar, Box, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { DarkMode, LightMode } from '@mui/icons-material';
 
 const Header = ({ onClick, darkMode }) => {
@@ -10,7 +10,7 @@ const Header = ({ onClick, darkMode }) => {
     return(
         <Box className={`header ${darkMode ? "darkMode" : ""}`}>
             <Box className='header-container'>
-                <Typography  variant='h5' className='logo'>Find the Country</Typography>
+                <Typography  variant='h4' className='logo'>Find the Country</Typography>
                 <Box className='switch-mode' onClick={onClick}>
                     {darkModeText ? (
                         <DarkMode onClick={switchText} />

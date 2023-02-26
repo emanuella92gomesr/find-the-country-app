@@ -1,15 +1,14 @@
-import { useState, useEffect } from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 
-import Header from "./components/Header/Header";
-import Country from "./components/Country/Country";
-import CountryDetails from "./components/CountryDetails/CountryDetails";
-import NotFoundCountry from "./components/NotFoundCountry/NotFoundCountry";
+import Header from './components/Header/Header';
+import Country from './components/Country/Country';
+import CountryDetails from './components/CountryDetails/CountryDetails';
+import NotFoundCountry from './components/NotFoundCountry/NotFoundCountry';
 
-import "./App.css";
+import './App.css';
 import { Box } from '@mui/material';
-import SearchIcon from "@mui/icons-material/Search";
-
+import SearchIcon from '@mui/icons-material/Search';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -42,8 +41,8 @@ function App() {
 
   if (loading) {
     return (
-      <Box className="load">
-        <p className="loading">Loading...</p>;
+      <Box className='load'>
+        <p className='loading'>Loading...</p>;
       </Box>
     );
   }
@@ -73,13 +72,12 @@ function App() {
   return (
     <Box className={`app ${darkMode ? "dark-mode" : ""}`}>
       <Header onClick={switchMode} darkMode={darkMode} />
-
       <Routes>
         <Route
           path="/"
           element={
-            <Box className="app-body">
-              <Box className="inputs">
+            <Box className='app-body'>
+              <Box className='inputs'>
                 <Box className={`search-input ${darkMode ? "dark-mode" : ""}`}>
                   <SearchIcon />
                   <input
@@ -90,7 +88,7 @@ function App() {
                 </Box>
               </Box>
 
-              <Box className="countries">
+              <Box className='countries'>
                 {" "}
                 {!error ? (
                   filtered.map((country) => {

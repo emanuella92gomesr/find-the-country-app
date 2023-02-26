@@ -1,9 +1,9 @@
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const NotFoundCountry = () => {
     return(
         <Box className='not-found'>
-            <p>No results found.</p>
+            <Typography variant='h5'>Sorry, we couldn't find any results.</Typography>
         </Box>
     );
 };

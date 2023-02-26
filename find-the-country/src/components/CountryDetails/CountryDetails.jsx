@@ -1,5 +1,5 @@
-import { ArrowBack } from "@mui/icons-material";
-import { useNavigate, useParams } from "react-router";
+import { ArrowBack } from '@mui/icons-material';
+import { useNavigate, useParams } from 'react-router';
 import { Box, Button, Typography } from '@mui/material';
 
 const CountryDetails = ({ darkMode, countries }) => {
@@ -39,7 +39,7 @@ const CountryDetails = ({ darkMode, countries }) => {
   };
 
   return (
-    <Box className="country-details">
+    <Box className='country-details'>
       <Button 
         onClick={goBack} 
         className={`back ${darkMode ? "dark-mode" : ""}`} 
@@ -52,15 +52,15 @@ const CountryDetails = ({ darkMode, countries }) => {
         <Typography variant="h6">Back</Typography>
       </Button>
 
-      <Box className="country-details-body">
-        <Box className="img-container">
+      <Box className='country-details-body'>
+        <Box className='img-container'>
           <img src={flagImg} alt="" />
         </Box>
 
-        <Box className="info">
-          <h2>{name}</h2>
-          <Box className="info-container">
-            <Box className="left-info">
+        <Box className='info'>
+          <Typography variant='h2'>{name}</Typography>
+          <Box className='info-container'>
+            <Box className='left-info'>
               <p>
                 Native Name:{" "}
                 <span className={`values ${darkMode ? "dark-mode" : ""}`}>
@@ -86,7 +86,7 @@ const CountryDetails = ({ darkMode, countries }) => {
                 </span>
               </p>
             </Box>
-            <Box className="right-info">
+            <Box className='right-info'>
               <p>
                 Language:
                 <span className={`values ${darkMode ? "dark-mode" : ""}`}>

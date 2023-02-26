@@ -23,12 +23,6 @@
     max-width: 1400px;
 }
 
-.not-found p {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 600;
-}
-
 .header {
     padding: 15px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.2);
@@ -123,8 +117,7 @@
 }
 
 .loading {
-    font-size: 75px;
-    font-weight: 600;
+    font-size: 50px;
     margin: auto;
     position: absolute;
     top: 50%;
