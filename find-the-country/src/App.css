@@ -101,13 +101,9 @@
     width: 305px;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    height: 300px;
+    height: 350px;
     cursor: pointer;
     transition: all 0.3s ease-in;
-}
-
-.country:hover {
-    transform: scale(1.015);
 }
 
 .load {
@@ -144,7 +140,6 @@
 
 .country .name {
     margin-bottom: 10px;
-    margin-left: 10px;
     margin-top: 5px;
 }
 
@@ -158,7 +153,6 @@
 
 .country .details p {
     margin-bottom: 5px;
-    margin-left: 10px;
 }
 
 .country-details {
@@ -185,6 +179,25 @@
 }
 
 .back.dark-mode {
+    background-color: var(--dark-mode-element);
+    color: white;
+}
+
+.card-options {
+    background-color: white;
+    border: 0;
+    outline: 0;
+    margin-bottom: 25px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.card-options.dark-mode {
     background-color: var(--dark-mode-element);
     color: white;
 }
