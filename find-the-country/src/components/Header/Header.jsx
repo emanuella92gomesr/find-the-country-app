@@ -17,7 +17,7 @@ const Header = ({ onClick, darkMode }) => {
                     ): (
                         <LightMode onClick={switchText}/>
                     )}
-                    <Typography variant='h5' onClick={switchText}>
+                    <Typography variant='h7' onClick={switchText}>
                         {darkModeText ? "Dark Mode" : "Light Mode"}
                     </Typography>
                 </Box>
